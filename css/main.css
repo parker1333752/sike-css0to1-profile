@@ -1,4 +1,6 @@
 body{
+    margin: 0;
+    padding: 0;
     background-image: url("../img/bg5.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -8,6 +10,7 @@ body{
 .container{
     width: 960px;
     margin: 0 auto;
+    padding: 0;
 }
 .container h1{
     margin: 0 auto;
@@ -221,4 +224,71 @@ h2 h3 h4 h5 h6:{
     position: absolute;
     left: -105%;
     width: 100%;
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 100%;
+        overflow: hidden;
+    }
+    .container h1{
+        font-size: 32px;
+    }
+    .main-nav{
+        overflow: hidden;
+    }
+    .main-nav ul li{
+        display: block;
+    }
+    .info-section{
+        padding: 15px 45px;
+    }
+    .whatido ul li{
+        width: 100%;
+
+        float: none;
+        display: block;
+    }
+    .education-experience header h2 span{
+        display: block;
+    }
+    .education-experience__list li img{
+        display: block;
+        float: none;
+        margin: 0 auto;
+        width: 180px;
+        height: 180px;
+    }
+    .photos__list{
+        margin: 0;
+        padding: 0;
+    }
+    .photos__list li{
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0
+    }
+    .get-in-touch__list{
+        margin: 0;
+        margin-top: 40px;
+        padding: 0;
+        width: 100%;
+    }
+    .get-in-touch__list li{
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 50%;
+    }
+    .get-in-touch__list li img{
+        width: 80%;
+    }
+    .contact form{
+        text-align: left;
+        width: 100%;
+    }
+    .contact form label{
+        position: static;
+    }
 }
